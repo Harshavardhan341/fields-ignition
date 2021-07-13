@@ -7,14 +7,16 @@
   
   <include file="$(find ros_ign_gazebo)/launch/ign_gazebo.launch">
     <arg name="ign_args" value="-r -v 3 $(arg world).sdf"/>
+  
   </include>
-  <group ns="$(arg name)">
+  <group ns="husky1">
     <node
     pkg="ros_ign_gazebo"
     type="create"
     name="spawn_husky"
     output="screen"
-    args="-world $(arg world) -file $(find husky_bot)/models/husky_bot.sdf -model husky1 -allow_renaming true -z 0.5 -y -1">
+    args="-world $(arg world) -file $(find husky_bot)/models/husky_bot.sdf -name husky1 -model husky1 -allow_renaming true -z 0.5 -y -1">
   </node>
+  
   </group>
 </launch>

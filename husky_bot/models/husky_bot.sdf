@@ -14,7 +14,7 @@
                 <right_joint>rear_right_wheel_joint</right_joint>
                 <wheel_separation>0.684735</wheel_separation>
                 <wheel_radius>0.1651</wheel_radius>
-                <topic>model/costar_husky_sensor_config_1/cmd_vel_relay</topic>
+                <topic>/cmd_vel_relay</topic>
                 <min_velocity>-1</min_velocity>
                 <max_velocity>1</max_velocity>
                 <min_acceleration>-3</min_acceleration>
