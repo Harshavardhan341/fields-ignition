@@ -7,7 +7,7 @@
     type="create"
     name="spawn_husky"
     output="screen"
-    args="-world $(arg world) -file $(find husky_bot)/models/husky_bot.sdf -name $(arg robot_name) -model $(arg robot_name) -allow_renaming true -z 0.5 -y -1">
+    args="-world $(arg world) -file $(find husky_bot)/models/husky_bot.sdf -name $(arg robot_name)  -allow_renaming true -z 0.5 -y -1">
   </node>
   <include file="$(find fields_ignition)/launch/husky_topics.launch">
     <arg name="world_name" value="$(arg world)"/>

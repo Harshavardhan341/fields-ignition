@@ -9,12 +9,12 @@
     <arg name="ign_args" value="-r -v 3 $(arg world).sdf"/>
   
   </include>
-  <group ns="husky1">
+
+  <group ns="husky2">
     <include file="$(find husky_bot)/launch/one_bot.launch">
-      <arg name="robot_name" value="husky1"/>
+      <arg name="robot_name" value="husky2"/>
       <arg name="world" value="empty"/>
       </include>
-
   
   </group>
 </launch>
